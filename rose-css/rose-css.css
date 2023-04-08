@@ -1,0 +1,312 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'myfont', sans-serif;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url("../fonts-rose/AnyConv.com__Highrise Bold.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: myfont;
+  src: url("../fonts-rose/AnyConv.com__Daybreak regular.woff2");
+}
+
+.container{
+  min-width: 100%;
+  height: auto;
+}
+
+.header{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px 22px;
+}
+
+.header-mobile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  color: #042a51;
+  font-size: 2.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu{
+  color:#042a51 ;
+  cursor: pointer;
+}
+
+.header-text{
+  padding: 15px 0;
+  display: none;
+}
+
+.blue-txt{
+  font-size: 1.2rem;
+  color: #042a51;
+  padding: 25px 0;
+  cursor: pointer;
+}
+
+.list{
+  list-style: none;
+  color: #67737d;
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon:hover{
+  background-color: #949494;
+}
+
+.txt-icon{
+  color: #042a51;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.insta-icon{
+  color:#042a51 ;
+}
+
+.contact-icons{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #efefef;
+}
+
+.top-text{
+  width: 76%;
+  font-size: 1.3rem;
+  color: #2d435b;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.scroll-text{
+  padding-bottom: 55px;
+  font-size: 1.4rem;
+  color: #808a95;
+}
+
+.frame{
+  padding-top: 5px;
+  background-color: #ffffff;
+  background-size: cover ;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.imggg{
+  width: 100%;
+  min-height: 100%;
+  opacity: 1;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #011b50;
+}
+
+.frame:hover .overlay {
+  opacity: 70%;
+}
+
+.hover-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.hover-text-year{
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+.hover-text-main{
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.bottom-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+
+}
+
+.bottom-text{
+  padding-top: 20px;
+  font-size: 1.4rem;
+  color: #808a95;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+.container{
+  display: flex;
+  flex-direction: row;
+}
+  .menu{
+    display: none;
+  }
+  .header-text{
+    display: flex;
+    flex-direction: column;
+  }
+  .pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .frame{
+    width: 50%;
+  }
+  .extra{
+    padding-right: 5px;
+  }
+  .header{
+    width: 33%;
+  }
+  .main{
+    width: 67%;
+  }
+  .title{
+    font-size: 2.4rem;
+  }
+  .blue-txt{
+    font-size: 2.1rem;
+  }
+  .list-items{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  .top-text{
+    width: 80%;
+    font-size: 2.4rem;
+  }
+
+  .scroll-text{
+    padding-top: 30px;
+    font-size: 1.8rem;
+  }
+  .main-text{
+    padding: 50px 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .top-text{
+    width: 70%;
+    font-size: 2.4rem;
+  }
+  .header{
+    padding: 50px 50px;
+  }
+
+}
+
+@media (min-width: 2200px){
+  .title{
+    font-size: 10rem;
+  }
+  .top-text{
+    padding: 100px 0;
+    width: 50%;
+    font-size: 8.5rem;
+  }
+  .scroll-text{
+    padding: 100px 0;
+    font-size: 6.8rem;
+  }
+  .bottom-text{
+    padding-top: 20px;
+    font-size: 5.5rem;
+    color: #808a95;
+    cursor: pointer;
+  }
+  .list-items{
+    font-size: 6.2rem;
+    margin-bottom: 80px;
+  }
+  .blue-txt{
+    font-size: 6.3rem;
+    padding: 100px 0;
+  }
+  .header{
+    width: 20%;
+  }
+  .main{
+    width: 80%;
+  }
+  .hover-text-year{
+    font-size: 6.5rem;
+  }
+  .hover-text-main{
+    font-size: 8rem;
+  }
+  .icon{
+    width: 80px;
+    height: 80px;
+  }
+  .txt-icon{
+    color: #042a51;
+    font-size: 4rem;
+  }
+  .contact-icons{
+    padding-top: 40px;
+    width: 300px;
+  }
+
+}
